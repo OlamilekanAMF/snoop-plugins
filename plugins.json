@@ -1,3 +1,122 @@
 [
-  
+  {
+    "id": "snoop-pwned",
+    "name": "snoop-pwned",
+    "displayName": "Data Breach & Password Sentinel",
+    "description": "Queries HaveIBeenPwned API to audit personal emails and password hashes against active data breach dumps.",
+    "author": "snoop-sec",
+    "category": "Security",
+    "stars": 612,
+    "installs": 3840,
+    "version": "1.0.0",
+    "file": "snoop_pwned.py",
+    "tags": [
+      "security",
+      "breach",
+      "pwned",
+      "passwords"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-pwned\""
+  },
+  {
+    "id": "snoop-virustotal",
+    "name": "snoop-virustotal",
+    "displayName": "Hash & File Threat Inspector",
+    "description": "Calculates SHA-256 hashes of local files or URLs and queries VirusTotal to detect malware across 70+ AV engines.",
+    "author": "cyber-sentinel",
+    "category": "Security",
+    "stars": 540,
+    "installs": 3120,
+    "version": "1.0.0",
+    "file": "snoop_virustotal.py",
+    "tags": [
+      "security",
+      "malware",
+      "virustotal",
+      "scanner"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-virustotal\""
+  },
+  {
+    "id": "snoop-port-killer",
+    "name": "snoop-port-killer",
+    "displayName": "Rogue Process & Port Liberator",
+    "description": "Inspects open network ports (e.g. 3000, 8080) and terminates locking zombie processes on voice command.",
+    "author": "dev-ops-core",
+    "category": "Developer",
+    "stars": 785,
+    "installs": 4950,
+    "version": "1.0.0",
+    "file": "snoop_port_killer.py",
+    "tags": [
+      "developer",
+      "ports",
+      "processes",
+      "windows"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-port-killer\""
+  },
+  {
+    "id": "snoop-git-copilot",
+    "name": "snoop-git-copilot",
+    "displayName": "Git Diff & Commit Generator",
+    "description": "Scans local Git working trees, analyzes staged diffs, and synthesizes conventional commit messages instantly.",
+    "author": "git-craft",
+    "category": "Productivity",
+    "stars": 492,
+    "installs": 2890,
+    "version": "1.0.0",
+    "file": "snoop_git_copilot.py",
+    "tags": [
+      "git",
+      "productivity",
+      "commits",
+      "developer"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-git-copilot\""
+  },
+  {
+    "id": "snoop-obs-director",
+    "name": "snoop-obs-director",
+    "displayName": "OBS Studio Streaming Director",
+    "description": "Integrates with OBS WebSocket v5 to switch scenes, toggle microphones, and start/stop recordings hands-free.",
+    "author": "stream-forge",
+    "category": "Creator",
+    "stars": 390,
+    "installs": 2150,
+    "version": "1.0.0",
+    "file": "snoop_obs_director.py",
+    "tags": [
+      "obs",
+      "streaming",
+      "creator",
+      "automation"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-obs-director\""
+  },
+  {
+    "id": "snoop-game-optimizer",
+    "name": "snoop-game-optimizer",
+    "displayName": "Windows Game Mode & RAM Purge",
+    "description": "Purges Windows standby memory, boosts foreground thread priorities, and silences notifications for gaming.",
+    "author": "sys-tuning",
+    "category": "System",
+    "stars": 670,
+    "installs": 4320,
+    "version": "1.0.0",
+    "file": "snoop_game_optimizer.py",
+    "tags": [
+      "system",
+      "gaming",
+      "ram",
+      "performance"
+    ],
+    "isVerified": true,
+    "installCommand": "snoop install plugin \"snoop-game-optimizer\""
+  }
 ]

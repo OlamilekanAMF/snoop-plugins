@@ -1,57 +1,36 @@
-# Snoop Plugins — Community Marketplace
+# Snoop Community Plugins Registry
 
-The official plugin repository for [Snoop AI](https://github.com/OlamilekanAMF).
+Welcome to the official community plugin registry for **Snoop OS** (`github.com/OlamilekanAMF/snoop-plugins`).
 
-## Install a plugin
-Tell Snoop: `install plugin [plugin-name]`
+This repository serves as the central directory for verified Snoop community plugins. All plugins listed in [`plugins.json`](plugins.json) can be installed with a single command or voice prompt by any Snoop user worldwide.
 
-## Browse plugins
-Tell Snoop: `list available plugins`
+---
 
-## Submit your own plugin
+## 📦 Verified Plugins Directory
 
-1. Fork this repo
-2. Add your `.py` file to the `plugins/` folder
-3. Add your plugin entry to `plugins.json`:
+| Plugin ID | Name | Category | Author | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **`snoop-pwned`** | Data Breach & Password Sentinel | *Security* | `@snoop-sec` | Audits personal emails & password hashes against HaveIBeenPwned breach dumps. |
+| **`snoop-virustotal`** | Hash & File Threat Inspector | *Security* | `@cyber-sentinel` | Computes SHA-256 hashes and queries VirusTotal across 70+ AV engines. |
+| **`snoop-port-killer`** | Rogue Process & Port Liberator | *Developer* | `@dev-ops-core` | Inspects open network ports (e.g. 3000, 8080) and terminates locking zombie processes. |
+| **`snoop-git-copilot`** | Git Diff & Commit Generator | *Productivity* | `@git-craft` | Analyzes staged Git diffs and synthesizes conventional commit messages. |
+| **`snoop-obs-director`** | OBS Studio Streaming Director | *Creator* | `@stream-forge` | Integrates with OBS WebSocket v5 to switch scenes, mute mics, and trigger recordings. |
+| **`snoop-game-optimizer`** | Windows Game Mode & RAM Purge | *System* | `@sys-tuning` | Purges standby memory, trims working sets, and optimizes CPU priorities for gaming. |
 
-```json
-{
-  "name":        "my-plugin",
-  "description": "What it does in one line",
-  "author":      "YourGitHubUsername",
-  "version":     "1.0.0",
-  "file":        "my_plugin.py",
-  "tags":        ["category", "keyword"],
-  "installs":    0
-}
+---
+
+## ⚡ Installation
+
+Install any plugin from the terminal:
+```bash
+snoop install plugin "<plugin-id>"
 ```
 
-4. Open a Pull Request — approved plugins appear in the marketplace immediately.
+Or speak to Snoop:
+> *"Snoop, install plugin snoop-port-killer"*
 
-## Plugin format
+---
 
-```python
-# plugins/my_plugin.py
+## 🛠️ Contributing a Plugin
 
-def on_snoop_created(snoop=None):
-    """Called once when Snoop boots."""
-    pass
-
-def on_user_message(text, snoop=None):
-    """
-    Called before every user message.
-    Return a string to override Snoop's response.
-    Return None to let Snoop handle it normally.
-    """
-    if "my trigger phrase" in text.lower():
-        return "My custom response"
-    return None
-
-def on_snoop_response(text, snoop=None):
-    """Called after Snoop generates a response. Return string to modify it."""
-    return text
-```
-
-## Available plugins
-
-See `plugins.json` for the full list.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full developer specifications, security guidelines, and how to submit a Pull Request.
